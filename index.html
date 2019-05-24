@@ -16,9 +16,6 @@
         .br0{
             border-right: 0;
         }
-        html{
-            font-size: 50px;
-        }
         header{
             position: relative;
             height: 0.86rem;
@@ -414,6 +411,7 @@
       <script>
           $(window).resize(function(){
             var win_width  = $(this).width();
+            console.log(win_width);
             $("html").css("font-size",win_width/540*50)
           });
 
