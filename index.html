@@ -409,12 +409,13 @@
           </div>
       </div>
       <script>
-          $(window).resize(function(){
+        var win_width = $(window).width();
+        $("html").css("font-size",win_width/540*50);
+         $(window).resize(function(){
             var win_width  = $(this).width();
             console.log(win_width);
             $("html").css("font-size",win_width/540*50)
           });
-
       </script>
 </body>
 </html>
